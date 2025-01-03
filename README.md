@@ -60,7 +60,41 @@ git clone https://github.com/dslvikky/sydneyluxuryhire-form.git
 
 2. Install dependencies:
 ```bash
-npm install
+# Initialize a new npm project (if package.json doesn't exist)
+npm init -y
+
+# Install core dependencies
+npm install vue@latest
+npm install @vitejs/plugin-vue
+npm install typescript
+npm install vite
+
+# Install EmailJS
+npm install @emailjs/browser
+
+# Install Tailwind CSS and its peer dependencies
+npm install -D tailwindcss postcss autoprefixer
+npm install -D @types/node
+
+# Install development dependencies for TypeScript
+npm install -D @vue/compiler-sfc
+npm install -D @types/vue
+
+# Install ESLint and related plugins (optional but recommended)
+npm install -D eslint
+npm install -D eslint-plugin-vue
+npm install -D @typescript-eslint/parser
+npm install -D @typescript-eslint/eslint-plugin
+```
+
+After installing dependencies:
+```bash
+#Initialize Tailwind CSS:
+npx tailwindcss init -p
+
+# Make sure your project structure is correct:
+# Create necessary directories if they don't exist
+mkdir -p src/types src/utils
 ```
 
 3. Install EmailJS:
